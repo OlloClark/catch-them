@@ -1,13 +1,34 @@
 console.log("asYouWish")
 
 
-//attempt to draw line
-
-let isDrawing = false;
-let x = 0;
-let y = 0;
 
 
+//starting the selections
+
+document.getElementById("aaronStart").addEventListener("mousedown", startSelection);
+document.getElementById("abigailStart").addEventListener("mousedown", startSelection);
+document.getElementById("elijahStart").addEventListener("mousedown", startSelection);
+document.getElementById("estherStart").addEventListener("mousedown", startSelection);
+document.getElementById("jethroStart").addEventListener("mousedown", startSelection);
+document.getElementById("miriamStart").addEventListener("mousedown", startSelection);
+document.getElementById("simonStart").addEventListener("mousedown", startSelection);
+
+document.getElementById("please!Start").addEventListener("mousedown", startSelection);
+document.getElementById("stop!Start").addEventListener("mousedown", startSelection);
+document.getElementById("listen!Start").addEventListener("mousedown", startSelection);
+document.getElementById("ritualStart").addEventListener("mousedown", startSelection);
+document.getElementById("wentStart").addEventListener("mousedown", startSelection);
+document.getElementById("awry!Start").addEventListener("mousedown", startSelection);
+document.getElementById("killStart").addEventListener("mousedown", startSelection);
+document.getElementById("thatStart").addEventListener("mousedown", startSelection);
+document.getElementById("thing!Start").addEventListener("mousedown", startSelection);
+
+
+//selection function
+
+function startSelection(){
+    console.log("selectionStarted");
+}
 
 
 // Constants:
