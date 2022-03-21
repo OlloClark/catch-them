@@ -1,6 +1,15 @@
 console.log("asYouWish")
 
 
+//attempt to draw line
+
+let isDrawing = false;
+let x = 0;
+let y = 0;
+
+
+
+
 // Constants:
 
 //const victimNameArray = ["AARON", "ABIGAIL", "ELIJAH", "ESTHER", "JETHRO", "MIRIAM", "SIMON"];
