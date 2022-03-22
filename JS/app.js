@@ -4,24 +4,33 @@ console.log("asYouWish")
 
 let foundAaronS = false;
 let foundAaronE = false;
+let foundAaronName = false;
 
 let foundAbigailS = false;
 let foundAbigailE = false;
+let foundAbigailName = false;
 
 let foundElijahS = false;
 let foundElijahE = false;
+let foundElijahName = false;
+
 
 let foundEstherS = false;
 let foundEstherE = false;
+let foundEstherName = false;
 
 let foundJethroS = false;
 let foundJethroE = false;
+let foundJethroName = false;
+
 
 let foundMiriamS = false;
 let foundMiriamE = false;
+let foundMiriamName = false;
 
 let foundSimonS = false;
 let foundSimonE = false;
+let foundSimonName = false;
 
 //Aaron start-end selections
 
@@ -41,6 +50,7 @@ function endAaronSelection(x,y){
     if (foundAaronS === true && foundAaronE === true) {
         document.getElementById("listAaron").style.color = "red";
         document.getElementById("listAaron").style.textDecoration = "line-through";
+        foundAaronName = true;
         console.log("found Aaron");
     }    
 }
@@ -63,6 +73,7 @@ function endAbigailSelection(x,y){
     if (foundAbigailS === true && foundAbigailE === true) {
         document.getElementById("listAbigail").style.color = "red";
         document.getElementById("listAbigail").style.textDecoration = "line-through";
+        foundAbigailName = true;
         console.log("found Abigail");
     }    
 }
@@ -85,6 +96,7 @@ function endElijahSelection(x,y){
     if (foundElijahS === true && foundElijahE === true) {
         document.getElementById("listElijah").style.color = "red";
         document.getElementById("listElijah").style.textDecoration = "line-through";
+        foundElijahName = true;
         console.log("found Elijah");
     }    
 }
@@ -107,6 +119,7 @@ function endEstherSelection(x,y){
     if (foundEstherS === true && foundEstherE === true) {
         document.getElementById("listEsther").style.color = "red";
         document.getElementById("listEsther").style.textDecoration = "line-through";
+        foundEstherName = true;
         console.log("found Esther");
     }    
 }
@@ -129,6 +142,7 @@ function endJethroSelection(x,y){
     if (foundJethroS === true && foundJethroE === true) {
         document.getElementById("listJethro").style.color = "red";
         document.getElementById("listJethro").style.textDecoration = "line-through";
+        foundJethroName = true;
         console.log("found Jethro");
     }    
 }
@@ -152,6 +166,7 @@ function endMiriamSelection(x,y){
     if (foundMiriamS === true && foundMiriamE === true) {
         document.getElementById("listMiriam").style.color = "red";
         document.getElementById("listMiriam").style.textDecoration = "line-through";
+        foundMiriamName = true;
         console.log("found Miriam");
     }    
 }
@@ -162,7 +177,7 @@ let findSimonStart = document.getElementById("simonStart").addEventListener("mou
 let findSimonEnd = document.getElementById("simonEnd").addEventListener("mouseup", endSimonSelection);
 
 
-//Find Miriam functions
+//Find Simon functions
 
 function startSimonSelection(x,y){
     foundSimonS = true;
@@ -175,9 +190,28 @@ function endSimonSelection(x,y){
     if (foundSimonS === true && foundSimonE === true) {
         document.getElementById("listSimon").style.color = "red";
         document.getElementById("listSimon").style.textDecoration = "line-through";
+        foundSimonName = true;
         console.log("found Simon");
     }    
 }
+
+//winning conditions:
+
+const gameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkWin);
+
+function checkWin() {
+    if (foundAaronName === true && foundAbigailName === true &&
+        foundElijahName === true && foundEstherName === true &&
+        foundJethroName === true && foundMiriamName === true &&
+        foundSimonName === true
+        ) {
+            console.log("winner!")
+        }
+}
+
+
+
+
 
 // //get start coordinates
 
