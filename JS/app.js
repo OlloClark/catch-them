@@ -23,12 +23,100 @@ let foundMiriamE = false;
 let foundSimonS = false;
 let foundSimonE = false;
 
+//Aaron start-end selections
+
+let findAaronStart = document.getElementById("aaronStart").addEventListener("mousedown", startAaronSelection);
+let findAaronEnd = document.getElementById("aaronEnd").addEventListener("mouseup", endAaronSelection);
+
+//Find Aaron functions
+
+function startAaronSelection(x,y){
+    foundAaronS = true;
+    console.log("selectionStarted");
+}
+
+function endAaronSelection(x,y){
+    foundAaronE = true;
+    console.log("selectionEnded");
+    if (foundAaronS === true && foundAaronE === true) {
+        document.getElementById("listAaron").style.color = "red";
+        document.getElementById("listAaron").style.textDecoration = "line-through";
+        console.log("found Aaron");
+    }    
+}
+
+//Abigail start-end selections
+
+let findAbigailStart = document.getElementById("abigailStart").addEventListener("mousedown", startAbigailSelection);
+let findAbigailEnd = document.getElementById("abigailEnd").addEventListener("mouseup", endAbigailSelection);
+
+//Find Abigail functions
+
+function startAbigailSelection(x,y){
+    foundAbigailS = true;
+    console.log("selectionStarted");
+}
+
+function endAbigailSelection(x,y){
+    foundAbigailE = true;
+    console.log("selectionEnded");
+    if (foundAbigailS === true && foundAbigailE === true) {
+        document.getElementById("listAbigail").style.color = "red";
+        document.getElementById("listAbigail").style.textDecoration = "line-through";
+        console.log("found Abigail");
+    }    
+}
+
+//Elijah start-end selections
+
+let findElijahStart = document.getElementById("elijahStart").addEventListener("mousedown", startElijahSelection);
+let findElijahEnd = document.getElementById("elijahEnd").addEventListener("mouseup", endElijahSelection);
+
+//Find Elijah functions
+
+function startElijahSelection(x,y){
+    foundElijahS = true;
+    console.log("selectionStarted");
+}
+
+function endElijahSelection(x,y){
+    foundElijahE = true;
+    console.log("selectionEnded");
+    if (foundElijahS === true && foundElijahE === true) {
+        document.getElementById("listElijah").style.color = "red";
+        document.getElementById("listElijah").style.textDecoration = "line-through";
+        console.log("found Elijah");
+    }    
+}
+
+//Esther start-end selections
+
+let findEstherStart = document.getElementById("estherStart").addEventListener("mousedown", startEstherSelection);
+let findEstherEnd = document.getElementById("estherEnd").addEventListener("mouseup", endEstherSelection);
+
+//Find Esther functions
+
+function startEstherSelection(x,y){
+    foundEstherS = true;
+    console.log("selectionStarted");
+}
+
+function endEstherSelection(x,y){
+    foundEstherE = true;
+    console.log("selectionEnded");
+    if (foundEstherS === true && foundEstherE === true) {
+        document.getElementById("listEsther").style.color = "red";
+        document.getElementById("listEsther").style.textDecoration = "line-through";
+        console.log("found Esther");
+    }    
+}
+
 //Jethro start-end selections
 
 let findJethroStart = document.getElementById("jethroStart").addEventListener("mousedown", startJethroSelection);
 let findJethroEnd = document.getElementById("jethroEnd").addEventListener("mouseup", endJethroSelection);
 
-//Found Jethro functions
+//Find Jethro functions
 
 function startJethroSelection(x,y){
     foundJethroS = true;
@@ -38,16 +126,58 @@ function startJethroSelection(x,y){
 function endJethroSelection(x,y){
     foundJethroE = true;
     console.log("selectionEnded");
-    if (foundJethroS == true && foundJethroE == true) {
+    if (foundJethroS === true && foundJethroE === true) {
         document.getElementById("listJethro").style.color = "red";
         document.getElementById("listJethro").style.textDecoration = "line-through";
         console.log("found Jethro");
     }    
 }
 
+//Miriam start-end selections
+
+let findMiriamStart = document.getElementById("miriamStart").addEventListener("mousedown", startMiriamSelection);
+let findMiriamEnd = document.getElementById("miriamEnd").addEventListener("mouseup", endMiriamSelection);
 
 
+//Find Miriam functions
 
+function startMiriamSelection(x,y){
+    foundMiriamS = true;
+    console.log("selectionStarted");
+}
+
+function endMiriamSelection(x,y){
+    foundMiriamE = true;
+    console.log("selectionEnded");
+    if (foundMiriamS === true && foundMiriamE === true) {
+        document.getElementById("listMiriam").style.color = "red";
+        document.getElementById("listMiriam").style.textDecoration = "line-through";
+        console.log("found Miriam");
+    }    
+}
+
+//Simon start-end selections
+
+let findSimonStart = document.getElementById("simonStart").addEventListener("mousedown", startSimonSelection);
+let findSimonEnd = document.getElementById("simonEnd").addEventListener("mouseup", endSimonSelection);
+
+
+//Find Miriam functions
+
+function startSimonSelection(x,y){
+    foundSimonS = true;
+    console.log("selectionStarted");
+}
+
+function endSimonSelection(x,y){
+    foundSimonE = true;
+    console.log("selectionEnded");
+    if (foundSimonS === true && foundSimonE === true) {
+        document.getElementById("listSimon").style.color = "red";
+        document.getElementById("listSimon").style.textDecoration = "line-through";
+        console.log("found Simon");
+    }    
+}
 
 // //get start coordinates
 
