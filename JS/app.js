@@ -1,6 +1,10 @@
 console.log("asYouWish")
 
-// start and end of victimList
+//check if game is over
+
+const gameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkEvilWin);
+
+// start and end of victimList names
 
 let foundAaronS = false;
 let foundAaronE = false;
@@ -31,6 +35,38 @@ let foundMiriamName = false;
 let foundSimonS = false;
 let foundSimonE = false;
 let foundSimonName = false;
+
+// start and end of secretList words
+
+let foundPleaseS = false;
+let foundPleaseE = false;
+let foundPleaseTotal = false;
+
+// SECRET LIST FUNCTIONS
+
+//Please! start-end selection
+
+let findPleaseStart = document.getElementById("please!Start").addEventListener("mousedown", startPleaseSelection);
+let findPleaseEnd = document.getElementById("please!End").addEventListener("mouseup", endPleaseSelection);
+
+//find Please! functions
+
+function startPleaseSelection(x,y){
+    foundPleaseS = true;
+    console.log("selectionStarted");
+}
+
+function endPleaseSelection(x,y){
+    foundPleaseE = true;
+    console.log("selectionEnded");
+    if (foundPleaseS === true && foundPleaseE === true) {
+        document.getElementById("listPlease!").innerText = "pLeAsE!";
+        foundPleaseTotal = true;
+        console.log("found Please!");
+    }    
+}
+
+//VICTIM LIST FUNCTIONS
 
 //Aaron start-end selections
 
@@ -197,9 +233,7 @@ function endSimonSelection(x,y){
 
 //winning conditions:
 
-const gameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkWin);
-
-function checkWin() {
+function checkEvilWin() {
     if (foundAaronName === true && foundAbigailName === true &&
         foundElijahName === true && foundEstherName === true &&
         foundJethroName === true && foundMiriamName === true &&
