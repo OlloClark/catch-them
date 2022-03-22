@@ -1,6 +1,8 @@
-console.log("asYouWish")
+//NOTES:
 
-//Initial function
+// inspiration for intro/outro screen code taken from www.jacobenfield.com/jakeWeb/JS_GAMES
+
+//Initial functions
 
 function startGame(){
     document.getElementById("gameIntro").style.display = "none";
@@ -106,12 +108,12 @@ let findAaronEnd = document.getElementById("aaronEnd").addEventListener("mouseup
 
 //Find Aaron functions
 
-function startAaronSelection(x,y){
+function startAaronSelection(){
     foundAaronS = true;
     console.log("selectionStarted");
 }
 
-function endAaronSelection(x,y){
+function endAaronSelection(){
     foundAaronE = true;
     console.log("selectionEnded");
     if (foundAaronS === true && foundAaronE === true) {
@@ -129,12 +131,12 @@ let findAbigailEnd = document.getElementById("abigailEnd").addEventListener("mou
 
 //Find Abigail functions
 
-function startAbigailSelection(x,y){
+function startAbigailSelection(){
     foundAbigailS = true;
     console.log("selectionStarted");
 }
 
-function endAbigailSelection(x,y){
+function endAbigailSelection(){
     foundAbigailE = true;
     console.log("selectionEnded");
     if (foundAbigailS === true && foundAbigailE === true) {
@@ -152,12 +154,12 @@ let findElijahEnd = document.getElementById("elijahEnd").addEventListener("mouse
 
 //Find Elijah functions
 
-function startElijahSelection(x,y){
+function startElijahSelection(){
     foundElijahS = true;
     console.log("selectionStarted");
 }
 
-function endElijahSelection(x,y){
+function endElijahSelection(){
     foundElijahE = true;
     console.log("selectionEnded");
     if (foundElijahS === true && foundElijahE === true) {
@@ -175,12 +177,12 @@ let findEstherEnd = document.getElementById("estherEnd").addEventListener("mouse
 
 //Find Esther functions
 
-function startEstherSelection(x,y){
+function startEstherSelection(){
     foundEstherS = true;
     console.log("selectionStarted");
 }
 
-function endEstherSelection(x,y){
+function endEstherSelection(){
     foundEstherE = true;
     console.log("selectionEnded");
     if (foundEstherS === true && foundEstherE === true) {
@@ -198,12 +200,12 @@ let findJethroEnd = document.getElementById("jethroEnd").addEventListener("mouse
 
 //Find Jethro functions
 
-function startJethroSelection(x,y){
+function startJethroSelection(){
     foundJethroS = true;
     console.log("selectionStarted");
 }
 
-function endJethroSelection(x,y){
+function endJethroSelection(){
     foundJethroE = true;
     console.log("selectionEnded");
     if (foundJethroS === true && foundJethroE === true) {
@@ -222,12 +224,12 @@ let findMiriamEnd = document.getElementById("miriamEnd").addEventListener("mouse
 
 //Find Miriam functions
 
-function startMiriamSelection(x,y){
+function startMiriamSelection(){
     foundMiriamS = true;
     console.log("selectionStarted");
 }
 
-function endMiriamSelection(x,y){
+function endMiriamSelection(){
     foundMiriamE = true;
     console.log("selectionEnded");
     if (foundMiriamS === true && foundMiriamE === true) {
@@ -246,12 +248,12 @@ let findSimonEnd = document.getElementById("simonEnd").addEventListener("mouseup
 
 //Find Simon functions
 
-function startSimonSelection(x,y){
+function startSimonSelection(){
     foundSimonS = true;
     console.log("selectionStarted");
 }
 
-function endSimonSelection(x,y){
+function endSimonSelection(){
     foundSimonE = true;
     console.log("selectionEnded");
     if (foundSimonS === true && foundSimonE === true) {
@@ -271,12 +273,12 @@ let findPleaseEnd = document.getElementById("please!End").addEventListener("mous
 
 //Find Please! functions
 
-function startPleaseSelection(x,y){
+function startPleaseSelection(){
     foundPleaseS = true;
     console.log("selectionStarted");
 }
 
-function endPleaseSelection(x,y){
+function endPleaseSelection(){
     foundPleaseE = true;
     console.log("selectionEnded");
     if (foundPleaseS === true && foundPleaseE === true) {
@@ -292,12 +294,12 @@ let findStopEnd = document.getElementById("stop!End").addEventListener("mouseup"
 
 //Find Stop! functions
 
-function startStopSelection(x,y){
+function startStopSelection(){
     foundStopS = true;
     console.log("selectionStarted");
 }
 
-function endStopSelection(x,y){
+function endStopSelection(){
     foundStopE = true;
     console.log("selectionEnded");
     if (foundStopS === true && foundStopE === true) {
@@ -313,12 +315,12 @@ let findListenEnd = document.getElementById("listen!End").addEventListener("mous
 
 //Find Listen! functions
 
-function startListenSelection(x,y){
+function startListenSelection(){
     foundListenS = true;
     console.log("selectionStarted");
 }
 
-function endListenSelection(x,y){
+function endListenSelection(){
     foundListenE = true;
     console.log("selectionEnded");
     if (foundListenS === true && foundListenE === true) {
@@ -334,12 +336,12 @@ let findSaveusEnd = document.getElementById("saveus!End").addEventListener("mous
 
 //Find Saveus! functions
 
-function startSaveusSelection(x,y){
+function startSaveusSelection(){
     foundSaveusS = true;
     console.log("selectionStarted");
 }
 
-function endSaveusSelection(x,y){
+function endSaveusSelection(){
     foundSaveusE = true;
     console.log("selectionEnded");
     if (foundSaveusS === true && foundSaveusE === true) {
@@ -355,12 +357,12 @@ let findRitualEnd = document.getElementById("ritualEnd").addEventListener("mouse
 
 //Find Ritual functions
 
-function startRitualSelection(x,y){
+function startRitualSelection(){
     foundRitualS = true;
     console.log("selectionStarted");
 }
 
-function endRitualSelection(x,y){
+function endRitualSelection(){
     foundRitualE = true;
     console.log("selectionEnded");
     if (foundRitualS === true && foundRitualE === true) {
@@ -376,12 +378,12 @@ let findWentEnd = document.getElementById("wentEnd").addEventListener("mouseup",
 
 //Find Went functions
 
-function startWentSelection(x,y){
+function startWentSelection(){
     foundWentS = true;
     console.log("selectionStarted");
 }
 
-function endWentSelection(x,y){
+function endWentSelection(){
     foundWentE = true;
     console.log("selectionEnded");
     if (foundWentS === true && foundWentE === true) {
@@ -397,7 +399,7 @@ let findAwryEnd = document.getElementById("awry!End").addEventListener("mouseup"
 
 //Find Awry! functions
 
-function startAwrySelection(x,y){
+function startAwrySelection(){
     foundAwryS = true;
     console.log("selectionStarted");
 }
@@ -418,12 +420,12 @@ let findKillEnd = document.getElementById("killEnd").addEventListener("mouseup",
 
 //Find Kill functions
 
-function startKillSelection(x,y){
+function startKillSelection(){
     foundKillS = true;
     console.log("selectionStarted");
 }
 
-function endKillSelection(x,y){
+function endKillSelection(){
     foundKillE = true;
     console.log("selectionEnded");
     if (foundKillS === true && foundKillE === true) {
@@ -439,12 +441,12 @@ let findThatEnd = document.getElementById("thatEnd").addEventListener("mouseup",
 
 //Find That functions
 
-function startThatSelection(x,y){
+function startThatSelection(){
     foundThatS = true;
     console.log("selectionStarted");
 }
 
-function endThatSelection(x,y){
+function endThatSelection(){
     foundThatE = true;
     console.log("selectionEnded");
     if (foundThatS === true && foundThatE === true) {
@@ -460,12 +462,12 @@ let findThingEnd = document.getElementById("thing!End").addEventListener("mouseu
 
 //Find Thing! functions
 
-function startThingSelection(x,y){
+function startThingSelection(){
     foundThingS = true;
     console.log("selectionStarted");
 }
 
-function endThingSelection(x,y){
+function endThingSelection(){
     foundThingE = true;
     console.log("selectionEnded");
     if (foundThingS === true && foundThingE === true) {
