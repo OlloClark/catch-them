@@ -1,5 +1,11 @@
 console.log("asYouWish")
 
+//Initial function
+
+function startGame(){
+    document.getElementById("gameIntro").style.display = "none";
+}
+
 //check if game is over
 
 const EvilGameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkEvilWin);
@@ -466,7 +472,7 @@ function checkEvilWin() {
         foundJethroName === true && foundMiriamName === true &&
         foundSimonName === true
         ) {
-            console.log("winner?")
+            window.alert("winner?");
         }
 }
 
@@ -477,7 +483,7 @@ function checkGoodWin() {
         foundAwryTotal === true && foundKillTotal === true &&
         foundThatTotal === true && foundThingTotal === true
         ) {
-            console.log("winner!")
+            window.alert("winner!")
         }
 }
 
