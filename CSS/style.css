@@ -1,7 +1,28 @@
 .everything {}
 
-.container {
+
+/* CITATION: .noselect class found at https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+
+.noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+
+#gameScreen {
     display: grid;
+    grid-template-columns: 1fr, 5fr, 1fr;
+    grid-template-rows: 1fr, 5fr, 3fr;
+}
+
+
+.container {
+    grid-column: 2 /3;
+    grid-row: 2/ 3;
+    display: grid;
+    
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 0;
@@ -9,7 +30,9 @@
     background-color: blueviolet;
     margin: auto;
     max-width: 500px;
-}  
+}
+
+
 
 .container div {
     display: flex;
@@ -25,27 +48,30 @@
  
 }
 
+.startPoint{}
+
+.endPoint{}
+
 .creatureOutput{}
 
 .victimOutput{}
 
 .selectionLine{}
 
-#wordGrid {
+#victimBox {
+  text-align: center;
+  grid-column: 3 / 4 ;
+  grid-row: 1 / 4;
 
-/* BOLD. REDOLENT OF OUIJA BOARD */
+  /* HARSH BURGUNDY WRITING */
 
 }
 
 #secretBox {
 
-/* GENTLE BLUE SCRIPT */
-
-}
-
-#victimNameBox {
-
-/* HARSH BURGUNDY WRITING */
+  text-align: center;
+  grid-column: 1 / 2 ;
+  grid-row: 1 / 4;
 
 }
 

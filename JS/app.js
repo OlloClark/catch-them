@@ -1,34 +1,62 @@
 console.log("asYouWish")
 
+// Misc
 
-
+let foundJethroS = false;
+let foundJethroE = false;
 
 //starting the selections
 
-document.getElementById("aaronStart").addEventListener("mousedown", startSelection);
-document.getElementById("abigailStart").addEventListener("mousedown", startSelection);
-document.getElementById("elijahStart").addEventListener("mousedown", startSelection);
-document.getElementById("estherStart").addEventListener("mousedown", startSelection);
-document.getElementById("jethroStart").addEventListener("mousedown", startSelection);
-document.getElementById("miriamStart").addEventListener("mousedown", startSelection);
-document.getElementById("simonStart").addEventListener("mousedown", startSelection);
+let findJethroStart = document.getElementById("jethroStart").addEventListener("mousedown", startSelection);
 
-document.getElementById("please!Start").addEventListener("mousedown", startSelection);
-document.getElementById("stop!Start").addEventListener("mousedown", startSelection);
-document.getElementById("listen!Start").addEventListener("mousedown", startSelection);
-document.getElementById("ritualStart").addEventListener("mousedown", startSelection);
-document.getElementById("wentStart").addEventListener("mousedown", startSelection);
-document.getElementById("awry!Start").addEventListener("mousedown", startSelection);
-document.getElementById("killStart").addEventListener("mousedown", startSelection);
-document.getElementById("thatStart").addEventListener("mousedown", startSelection);
-document.getElementById("thing!Start").addEventListener("mousedown", startSelection);
+//finishing the selections
 
+let findJethroEnd = document.getElementById("jethroEnd").addEventListener("mouseup", endSelection);
 
-//selection function
+//startSelection function
 
-function startSelection(){
+function startSelection(x,y){
+    foundJethroS = true;
     console.log("selectionStarted");
+   
 }
+
+// endSelection function
+
+function endSelection(x,y){
+    foundJethroE = true;
+    console.log("selectionEnded");
+    if (foundJethroS == true && foundJethroE == true) {
+        console.log("found Jethro");
+    }
+    
+
+    
+}
+
+
+
+
+
+// //get start coordinates
+
+// document.addEventListener("mousedown", function(e){
+//     console.log(`x: ${e.x}, y:${e.y}`);
+// })
+
+// //get end coordinates
+
+// document.addEventListener("mouseup", function(e){
+//     console.log(`x: ${e.x}, y:${e.y}`);
+// })
+
+
+
+
+
+
+
+
 
 
 // Constants:
