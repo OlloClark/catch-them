@@ -11,6 +11,11 @@ function replayGame(){
     document.location.reload();
 }
 
+function goodReplayGame(){
+    document.getElementById("gameGoodOutro").style.display = "none";
+    document.location.reload();
+}
+
 //check if game is over
 
 const EvilGameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkEvilWin);
@@ -488,7 +493,7 @@ function checkGoodWin() {
         foundAwryTotal === true && foundKillTotal === true &&
         foundThatTotal === true && foundThingTotal === true
         ) {
-            window.alert("winner!")
+            document.getElementById("gameGoodOutro").style.display = "block";
         }
 }
 
