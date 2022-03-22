@@ -27,6 +27,8 @@ function endSelection(x,y){
     foundJethroE = true;
     console.log("selectionEnded");
     if (foundJethroS == true && foundJethroE == true) {
+        document.getElementById("listJethro").style.color = "red";
+        document.getElementById("listJethro").style.textDecoration = "line-through";
         console.log("found Jethro");
     }
     
@@ -34,6 +36,7 @@ function endSelection(x,y){
     
 }
 
+endSelection();
 
 
 
