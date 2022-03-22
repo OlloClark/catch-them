@@ -1,42 +1,50 @@
 console.log("asYouWish")
 
-// Misc
+// start and end of victimList
+
+let foundAaronS = false;
+let foundAaronE = false;
+
+let foundAbigailS = false;
+let foundAbigailE = false;
+
+let foundElijahS = false;
+let foundElijahE = false;
+
+let foundEstherS = false;
+let foundEstherE = false;
 
 let foundJethroS = false;
 let foundJethroE = false;
 
-//starting the selections
+let foundMiriamS = false;
+let foundMiriamE = false;
 
-let findJethroStart = document.getElementById("jethroStart").addEventListener("mousedown", startSelection);
+let foundSimonS = false;
+let foundSimonE = false;
 
-//finishing the selections
+//Jethro start-end selections
 
-let findJethroEnd = document.getElementById("jethroEnd").addEventListener("mouseup", endSelection);
+let findJethroStart = document.getElementById("jethroStart").addEventListener("mousedown", startJethroSelection);
+let findJethroEnd = document.getElementById("jethroEnd").addEventListener("mouseup", endJethroSelection);
 
-//startSelection function
+//Found Jethro functions
 
-function startSelection(x,y){
+function startJethroSelection(x,y){
     foundJethroS = true;
     console.log("selectionStarted");
-   
 }
 
-// endSelection function
-
-function endSelection(x,y){
+function endJethroSelection(x,y){
     foundJethroE = true;
     console.log("selectionEnded");
     if (foundJethroS == true && foundJethroE == true) {
         document.getElementById("listJethro").style.color = "red";
         document.getElementById("listJethro").style.textDecoration = "line-through";
         console.log("found Jethro");
-    }
-    
-
-    
+    }    
 }
 
-endSelection();
 
 
 
