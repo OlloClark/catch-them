@@ -6,6 +6,11 @@ function startGame(){
     document.getElementById("gameIntro").style.display = "none";
 }
 
+function replayGame(){
+    document.getElementById("gameEvilOutro").style.display = "none";
+    document.location.reload();
+}
+
 //check if game is over
 
 const EvilGameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkEvilWin);
@@ -472,7 +477,7 @@ function checkEvilWin() {
         foundJethroName === true && foundMiriamName === true &&
         foundSimonName === true
         ) {
-            window.alert("winner?");
+            document.getElementById("gameEvilOutro").style.display = "block";
         }
 }
 

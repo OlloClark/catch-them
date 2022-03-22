@@ -28,26 +28,26 @@
 
 #gameIntro {
   position: absolute;
-  z-index: 5;
+  z-index: 12;
+  width: 400px;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  background-color: #252526;
+  color: #7F1331;
+  text-align: center;
+}
+
+#gameEvilOutro {
+  position: absolute;
+  z-index: 11;
   width: 400px;
   height: 400px;
   top: 200px;
   left: 500px;
   background-color: #252526;
   color: #7F1331;
-  text-align: center;
-  justify-items: center;
-}
-
-#gameOutro {
-  position: absolute;
-  z-index: 5;
-  width: 400px;
-  height: 400px;
-  top: 200px;
-  left: 500px;
-  background-color: #252526;
-  color: #7F1331; 
+  display: none;
 }
 
 .container {
