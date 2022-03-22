@@ -15,13 +15,13 @@
   }
 
 html, body {
-  min-height: 100%;
+  min-height: auto;
 }
 
 #gameScreen {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-    grid-template-rows: 1fr 5fr 3fr;
+    grid-template-rows: 1fr 8fr 1fr;
 }
 
 .button{
@@ -34,15 +34,16 @@ html, body {
 }
 
 #gameIntro {
-  position: absolute;
+  
   z-index: 12;
-  width: 400px;
-  height: 400px;
-  left: 50%;
-  top: 50%;
+  width: 600px;
+  height: 500px;
   background-color: #252526;
   color: #7F1331;
   text-align: center;
+  grid-column: 3 / 4;
+  grid-row: 2/ 3;
+  border-radius: 5px;
 }
 
 #gameEvilOutro {
@@ -84,8 +85,6 @@ html, body {
     cursor: pointer;
 }
 
-
-
 .container div {
     display: flex;
   background-color: rgb(218, 211, 211);
@@ -99,16 +98,6 @@ html, body {
   
  
 }
-
-.startPoint{}
-
-.endPoint{}
-
-.creatureOutput{}
-
-.victimOutput{}
-
-.selectionLine{}
 
 #victimBox {
   display: grid;
@@ -143,12 +132,6 @@ html, body {
 #messageBoxTwo {
 
 /* HARSH BURGUNDY WRITING */
-
-}
-
-#youWinBox {
-
-/* BOLD. REDOLENT OF OUIJA BOARD */
 
 }
 
