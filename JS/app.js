@@ -2,7 +2,8 @@ console.log("asYouWish")
 
 //check if game is over
 
-const gameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkEvilWin);
+const EvilGameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkEvilWin);
+const GoodGameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkGoodWin);
 
 // start and end of victimList names
 
@@ -42,29 +43,43 @@ let foundPleaseS = false;
 let foundPleaseE = false;
 let foundPleaseTotal = false;
 
-// SECRET LIST FUNCTIONS
+let foundStopS = false;
+let foundStopE = false;
+let foundStopTotal = false;
 
-//Please! start-end selection
+let foundListenS = false;
+let foundListenE = false;
+let foundListenTotal = false;
 
-let findPleaseStart = document.getElementById("please!Start").addEventListener("mousedown", startPleaseSelection);
-let findPleaseEnd = document.getElementById("please!End").addEventListener("mouseup", endPleaseSelection);
+let foundSaveusS = false;
+let foundSaveusE = false;
+let foundSaveusTotal = false;
 
-//find Please! functions
+let foundRitualS = false;
+let foundRitualE = false;
+let foundRitualTotal = false;
 
-function startPleaseSelection(x,y){
-    foundPleaseS = true;
-    console.log("selectionStarted");
-}
+let foundWentS = false;
+let foundWentE = false;
+let foundWentTotal = false;
 
-function endPleaseSelection(x,y){
-    foundPleaseE = true;
-    console.log("selectionEnded");
-    if (foundPleaseS === true && foundPleaseE === true) {
-        document.getElementById("listPlease!").innerText = "pLeAsE!";
-        foundPleaseTotal = true;
-        console.log("found Please!");
-    }    
-}
+let foundAwryS = false;
+let foundAwryE = false;
+let foundAwryTotal = false;
+
+let foundKillS = false;
+let foundKillE = false;
+let foundKillTotal = false;
+
+let foundThatS = false;
+let foundThatE = false;
+let foundThatTotal = false;
+
+let foundThingS = false;
+let foundThingE = false;
+let foundThingTotal = false;
+
+
 
 //VICTIM LIST FUNCTIONS
 
@@ -231,13 +246,236 @@ function endSimonSelection(x,y){
     }    
 }
 
-//winning conditions:
+// SECRET LIST FUNCTIONS
+
+//Please! start-end selection
+
+let findPleaseStart = document.getElementById("please!Start").addEventListener("mousedown", startPleaseSelection);
+let findPleaseEnd = document.getElementById("please!End").addEventListener("mouseup", endPleaseSelection);
+
+//Find Please! functions
+
+function startPleaseSelection(x,y){
+    foundPleaseS = true;
+    console.log("selectionStarted");
+}
+
+function endPleaseSelection(x,y){
+    foundPleaseE = true;
+    console.log("selectionEnded");
+    if (foundPleaseS === true && foundPleaseE === true) {
+        document.getElementById("listPlease!").innerText = "pLeAsE!";
+        foundPleaseTotal = true;
+    }    
+}
+
+//Stop! start-end selection
+
+let findStopStart = document.getElementById("stop!Start").addEventListener("mousedown", startStopSelection);
+let findStopEnd = document.getElementById("stop!End").addEventListener("mouseup", endStopSelection);
+
+//Find Stop! functions
+
+function startStopSelection(x,y){
+    foundStopS = true;
+    console.log("selectionStarted");
+}
+
+function endStopSelection(x,y){
+    foundStopE = true;
+    console.log("selectionEnded");
+    if (foundStopS === true && foundStopE === true) {
+        document.getElementById("listStop!").innerText = "StOp!";
+        foundStopTotal = true;
+    }    
+}
+
+//Listen! start-end selection
+
+let findListenStart = document.getElementById("listen!Start").addEventListener("mousedown", startListenSelection);
+let findListenEnd = document.getElementById("listen!End").addEventListener("mouseup", endListenSelection);
+
+//Find Listen! functions
+
+function startListenSelection(x,y){
+    foundListenS = true;
+    console.log("selectionStarted");
+}
+
+function endListenSelection(x,y){
+    foundListenE = true;
+    console.log("selectionEnded");
+    if (foundListenS === true && foundListenE === true) {
+        document.getElementById("listListen!").innerText = "LiStEn!";
+        foundListenTotal = true;
+    }    
+}
+
+//Saveus! start-end selection
+
+let findSaveusStart = document.getElementById("saveus!Start").addEventListener("mousedown", startSaveusSelection);
+let findSaveusEnd = document.getElementById("saveus!End").addEventListener("mouseup", endSaveusSelection);
+
+//Find Saveus! functions
+
+function startSaveusSelection(x,y){
+    foundSaveusS = true;
+    console.log("selectionStarted");
+}
+
+function endSaveusSelection(x,y){
+    foundSaveusE = true;
+    console.log("selectionEnded");
+    if (foundSaveusS === true && foundSaveusE === true) {
+        document.getElementById("listSaveus!").innerText = "sAvE uS!";
+        foundSaveusTotal = true;
+    }    
+}
+
+//Ritual start-end selection
+
+let findRitualStart = document.getElementById("ritualStart").addEventListener("mousedown", startRitualSelection);
+let findRitualEnd = document.getElementById("ritualEnd").addEventListener("mouseup", endRitualSelection);
+
+//Find Ritual functions
+
+function startRitualSelection(x,y){
+    foundRitualS = true;
+    console.log("selectionStarted");
+}
+
+function endRitualSelection(x,y){
+    foundRitualE = true;
+    console.log("selectionEnded");
+    if (foundRitualS === true && foundRitualE === true) {
+        document.getElementById("listRitual").innerText = "RiTuAl";
+        foundRitualTotal = true;
+    }    
+}
+
+//Went start-end selection
+
+let findWentStart = document.getElementById("wentStart").addEventListener("mousedown", startWentSelection);
+let findWentEnd = document.getElementById("wentEnd").addEventListener("mouseup", endWentSelection);
+
+//Find Went functions
+
+function startWentSelection(x,y){
+    foundWentS = true;
+    console.log("selectionStarted");
+}
+
+function endWentSelection(x,y){
+    foundWentE = true;
+    console.log("selectionEnded");
+    if (foundWentS === true && foundWentE === true) {
+        document.getElementById("listWent").innerText = "wEnT";
+        foundWentTotal = true;
+    }    
+}
+
+//Awry! start-end selection
+
+let findAwryStart = document.getElementById("awry!Start").addEventListener("mousedown", startAwrySelection);
+let findAwryEnd = document.getElementById("awry!End").addEventListener("mouseup", endAwrySelection);
+
+//Find Awry! functions
+
+function startAwrySelection(x,y){
+    foundAwryS = true;
+    console.log("selectionStarted");
+}
+
+function endAwrySelection(x,y){
+    foundAwryE = true;
+    console.log("selectionEnded");
+    if (foundAwryS === true && foundAwryE === true) {
+        document.getElementById("listAwry!").innerText = "AwRy!";
+        foundAwryTotal = true;
+    }    
+}
+
+//Kill start-end selection
+
+let findKillStart = document.getElementById("killStart").addEventListener("mousedown", startKillSelection);
+let findKillEnd = document.getElementById("killEnd").addEventListener("mouseup", endKillSelection);
+
+//Find Kill functions
+
+function startKillSelection(x,y){
+    foundKillS = true;
+    console.log("selectionStarted");
+}
+
+function endKillSelection(x,y){
+    foundKillE = true;
+    console.log("selectionEnded");
+    if (foundKillS === true && foundKillE === true) {
+        document.getElementById("listKill").innerText = "KILL";
+        foundKillTotal = true;
+    }    
+}
+
+//That start-end selection
+
+let findThatStart = document.getElementById("thatStart").addEventListener("mousedown", startThatSelection);
+let findThatEnd = document.getElementById("thatEnd").addEventListener("mouseup", endThatSelection);
+
+//Find That functions
+
+function startThatSelection(x,y){
+    foundThatS = true;
+    console.log("selectionStarted");
+}
+
+function endThatSelection(x,y){
+    foundThatE = true;
+    console.log("selectionEnded");
+    if (foundThatS === true && foundThatE === true) {
+        document.getElementById("listThat").innerText = "THAT";
+        foundThatTotal = true;
+    }    
+}
+
+//Thing! start-end selection
+
+let findThingStart = document.getElementById("thing!Start").addEventListener("mousedown", startThingSelection);
+let findThingEnd = document.getElementById("thing!End").addEventListener("mouseup", endThingSelection);
+
+//Find Thing! functions
+
+function startThingSelection(x,y){
+    foundThingS = true;
+    console.log("selectionStarted");
+}
+
+function endThingSelection(x,y){
+    foundThingE = true;
+    console.log("selectionEnded");
+    if (foundThingS === true && foundThingE === true) {
+        document.getElementById("listThing!").innerText = "THING!";
+        foundThingTotal = true;
+    }    
+}
+
+//WINNING CONDITIONS:
 
 function checkEvilWin() {
     if (foundAaronName === true && foundAbigailName === true &&
         foundElijahName === true && foundEstherName === true &&
         foundJethroName === true && foundMiriamName === true &&
         foundSimonName === true
+        ) {
+            console.log("winner?")
+        }
+}
+
+function checkGoodWin() {
+    if (foundPleaseTotal === true && foundStopTotal === true &&
+        foundListenTotal === true && foundSaveusTotal === true &&
+        foundRitualTotal === true && foundWentTotal === true &&
+        foundAwryTotal === true && foundKillTotal === true &&
+        foundThatTotal === true && foundThingTotal === true
         ) {
             console.log("winner!")
         }
