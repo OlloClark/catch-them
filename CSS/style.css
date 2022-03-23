@@ -27,7 +27,7 @@ body{
 
 #gameScreen {
   display: grid;
-  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
   grid-template-rows: 1fr 8fr 1fr;
   background-color: #636366;
   position: absolute;
@@ -60,6 +60,7 @@ body{
   grid-column: 3 / 4;
   grid-row: 2/ 3;
   border-radius: 5px;
+  margin: auto;
   
 }
 
@@ -125,7 +126,7 @@ body{
     color: black;
     background-color: blueviolet;
     margin: auto;
-    max-width: 500px;
+    max-width: 600px;
     cursor: pointer;
 }
 
@@ -143,6 +144,10 @@ body{
  
 }
 
+#gameGrid {
+  min-width: 500px;
+  max-width: 
+}
 
 
 #victimBox {
