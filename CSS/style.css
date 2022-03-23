@@ -5,7 +5,7 @@
 
 
 /* CITATION: .noselect class found at https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
-
+/* CITATION: "Crazy Killer" font- http://www.fontemporium.com/ */
 .noselect {
     -webkit-touch-callout: none;
       -webkit-user-select: none;
@@ -15,28 +15,44 @@
   }
 
 html, body {
-  min-height: auto;
+  height: 100%;
+  margin:0;
+  background-color: #636366;
+}
+
+body{
+  position: relative;
+
 }
 
 #gameScreen {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
-    grid-template-rows: 1fr 8fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 8fr 1fr;
+  background-color: #636366;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
 }
 
 .button{
   border-radius: 10px;
   width: 50px;
+  height: 60px;
   text-align: center;
   cursor: pointer;
   font-size: 14pt;
   background-color: #3C3C3C;
+  margin: auto;
+  padding: auto;
 }
 
-#gameIntro {
-  
+.startMessage {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   z-index: 12;
-  width: 600px;
+  width: 500px;
   height: 500px;
   background-color: #252526;
   color: #7F1331;
@@ -44,17 +60,36 @@ html, body {
   grid-column: 3 / 4;
   grid-row: 2/ 3;
   border-radius: 5px;
+  
 }
 
+#GameIntroMessage {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+
+#btnStart {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  text-align: center;
+  margin: auto;
+  width: 150px;
+  height: 50px;
+  font-size: 30pt;
+}
+
+
 #gameEvilOutro {
-  position: absolute;
   z-index: 11;
-  width: 400px;
-  height: 400px;
-  top: 200px;
-  left: 500px;
+  width: 500px;
+  height: 500px;
   background-color: #252526;
+  border-radius: 5px;
   color: #7F1331;
+  text-align: center;
   display: none;
 }
 
@@ -70,13 +105,22 @@ html, body {
   display: none;
 }
 
+.evilEndMessage {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-column: 3 / 4;
+  grid-row: 2/ 3;
+}
+
 .container {
     grid-column: 3 / 4;
     grid-row: 2/ 3;
-    display: grid;
     
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
     gap: 0;
     color: black;
     background-color: blueviolet;
@@ -99,6 +143,8 @@ html, body {
  
 }
 
+
+
 #victimBox {
   display: grid;
   grid-template-columns: 1fr;
@@ -106,12 +152,18 @@ html, body {
   text-align: center;
   grid-column: 4 / 5 ;
   grid-row: 2 / 3;
+  color: #7F1331;
+  font-weight: bold;
+  font-size: 20pt;
+  font-family: "Arno Pro";
+  
+
 
   /* HARSH BURGUNDY WRITING */
 
 }
 
-#secretBox {
+.secretBox {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -121,17 +173,5 @@ html, body {
   color: #0078CF;
 
   /* angelic font */
-}
-
-#messageBoxOne {
-
-/* HARSH BURGUNDY WRITING */
-
-}
-
-#messageBoxTwo {
-
-/* HARSH BURGUNDY WRITING */
-
 }
 
