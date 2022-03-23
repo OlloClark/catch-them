@@ -5,16 +5,16 @@
 //Initial functions
 
 function startGame(){
-    document.getElementById("gameIntro").style.display = "none";
+    document.getElementById("gameIntro").style.visibility = "hidden";
 }
 
 function replayGame(){
-    document.getElementById("gameEvilOutro").style.display = "none";
+    document.getElementById("gameEvilOutro").style.visibility = "hidden";
     document.location.reload();
 }
 
 function goodReplayGame(){
-    document.getElementById("gameGoodOutro").style.display = "none";
+    document.getElementById("gameGoodOutro").style.visibility = "hidden";
     document.location.reload();
 }
 
