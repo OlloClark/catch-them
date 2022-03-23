@@ -484,7 +484,7 @@ function checkEvilWin() {
         foundJethroName === true && foundMiriamName === true &&
         foundSimonName === true
         ) {
-            document.getElementById("gameEvilOutro").style.display = "block";
+            document.getElementById("gameEvilOutro").style.visibility = "visible";
         }
 }
 
@@ -495,7 +495,7 @@ function checkGoodWin() {
         foundAwryTotal === true && foundKillTotal === true &&
         foundThatTotal === true && foundThingTotal === true
         ) {
-            document.getElementById("gameGoodOutro").style.display = "block";
+            document.getElementById("gameGoodOutro").style.visibility = "visible";
         }
 }
 
