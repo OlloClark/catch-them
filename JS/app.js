@@ -499,7 +499,20 @@ function checkGoodWin() {
         }
 }
 
+// //Letter highlight function
 
+// const letterButton = document.querySelector(".letter");
+
+// letterButton.addEventListener("mousedown", function() {
+//     letterButton.style.backgroundColor = "orange";
+//     letterButton.style.color = "white";
+// }
+// )
+
+// letterButton.addEventListener("mouseup", function(){
+//     letterButton.style.backgroundColor = null;
+//     letterButton.style.color = null;
+// })
 
 
 

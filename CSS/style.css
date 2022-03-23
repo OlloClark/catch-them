@@ -29,7 +29,7 @@ body{
   display: grid;
   grid-template-columns: 1fr 2fr 4fr 2fr 1fr;
   grid-template-rows: 1fr 8fr 1fr;
-  background-color: #636366;
+  background-color: #c0c0c4;
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   margin: auto;
@@ -84,14 +84,43 @@ body{
 
 
 #gameEvilOutro {
-  z-index: 11;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  z-index: 15;
   width: 500px;
   height: 500px;
   background-color: #252526;
-  border-radius: 5px;
   color: #7F1331;
   text-align: center;
+  grid-column: 3 / 4;
+  grid-row: 2/ 3;
+  border-radius: 5px;
+  margin: auto;
   display: none;
+}
+
+#gameEvilOutroMessage {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+
+#evilYouWin {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+#btnReplay {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  margin: auto;
+  width: 150px;
+  height: 100px;
+  font-size: 30pt;
+
 }
 
 #gameGoodOutro {
@@ -117,14 +146,10 @@ body{
 .container {
     grid-column: 3 / 4;
     grid-row: 2/ 3;
-    
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
     gap: 0;
-    color: black;
-    background-color: blueviolet;
     margin: auto;
     max-width: 600px;
     cursor: pointer;
@@ -132,7 +157,7 @@ body{
 
 .container div {
     display: flex;
-  background-color: rgb(218, 211, 211);
+  background-color: #afafb3;
   border-color: black;
   border: solid;
   border-width: thin;
@@ -146,8 +171,12 @@ body{
 
 #gameGrid {
   min-width: 500px;
-  max-width: 
+
 }
+
+/* .letter {
+  background-color: #3C4044;
+} */
 
 
 #victimBox {
@@ -161,6 +190,7 @@ body{
   font-weight: bold;
   font-size: 20pt;
   font-family: "Arno Pro";
+  font-style: italic;
   
 
 

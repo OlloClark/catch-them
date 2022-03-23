@@ -13,12 +13,12 @@
  
     <div id="gameScreen">
       <div id= "gameIntro" class="startMessage">
-        <h1 id="GameIntroMessage">HELP. ME. CATCH. THEM.</h1>
+        <h1 id="GameIntroMessage">HELP ME. CATCH THEM.</h1>
         <div id="btnStart" class="button" onclick="startGame()">Begin</div>
       </div>
       <div id="gameEvilOutro" class="evilEndMessage">
-        <h1 id="GameEvilOutroMessage"> THANK YOU. THEY WERE. DELICIOUS.</h1>
-        <h2> You Win?</h2>
+        <h1 id="gameEvilOutroMessage"> THANK YOU. THEY WERE. DELICIOUS.</h1>
+        <h2 id="evilYouWin"> You Win?</h2>
         <div id="btnReplay" class="button" onclick="replayGame()">Play Again</div>
       </div>
       <div id="gameGoodOutro">
@@ -27,7 +27,7 @@
         <div id="btnReplay" class="button" onclick="goodReplayGame()">Play Again</div>
       </div>
       <div id="gameGrid" class="container noselect">
-        <div id="thatEnd" class= "endPoint">T</div>
+        <div id="thatEnd" class="endPoint">T</div>
         <div>R</div>
         <div>U</div>
         <div>I</div>
@@ -40,8 +40,8 @@
         <div>!</div>
         <div>P</div>
         <div>L</div>
-        <div>O</div>
-        <div>G</div>
+        <div class ="letter">O</div>
+        <div class ="letter">G</div>
         <div>S</div>
         <div>O</div>
         <div>Y</div>
@@ -318,7 +318,7 @@
         <div id="estherEnd" class= "endPoint">R</div>
         </div>
       <div id="victimBox">
-        <div>Find these names:</div>
+        <div>Catch Them:</div>
         <div id="listAaron">Aaron</div>
         <div id="listAbigail">Abigail</div>
         <div id="listElijah">Elijah</div>
