@@ -1,8 +1,6 @@
 
 # "Catch Them": A spooky spin on the traditional wordsearch
 
-![alt text](https://imgur.com/gallery/QSgtz7A)
-
 **"HELP ME. CATCH THEM."**
 
 Something is asking for your help...or is it a demand? Assist as you will, but all might not be as it seems...
