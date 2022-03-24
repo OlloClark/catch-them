@@ -1,5 +1,7 @@
 //NOTES:
 
+//Citation: go fuck yourself GitHub...
+
 // CITATION: inspiration for intro/outro screen code found at www.jacobenfield.com/jakeWeb/JS_GAMES
 
 //Initial functions:\\
