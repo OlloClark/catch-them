@@ -28,7 +28,7 @@ Something is asking for your help...or is it a demand? Assist as you will, but a
 **Play (if you dare) at:**
 =======
 
-[DEPLOYED GAME LINK]
+https://olloclark.github.io/catch-them/
 
 Click and drag across a name to CATCH THEM!
 
