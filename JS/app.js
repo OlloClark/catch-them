@@ -1,8 +1,10 @@
 //NOTES:
 
-// inspiration for intro/outro screen code taken from www.jacobenfield.com/jakeWeb/JS_GAMES
+// CITATION: inspiration for intro/outro screen code found at www.jacobenfield.com/jakeWeb/JS_GAMES
 
-//Initial functions
+//Initial functions:\\
+
+//Button functions- starting/replaying the game:
 
 function startGame(){
     document.getElementById("gameIntro").style.visibility = "hidden";
@@ -18,12 +20,12 @@ function goodReplayGame(){
     document.location.reload();
 }
 
-//check if game is over
+//Check if game is over:
 
 const EvilGameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkEvilWin);
 const GoodGameWin = document.getElementById("gameGrid").addEventListener("mouseup", checkGoodWin);
 
-// start and end of victimList names
+// Check if both start and end of victim names have been found:
 
 let foundAaronS = false;
 let foundAaronE = false;
@@ -37,7 +39,6 @@ let foundElijahS = false;
 let foundElijahE = false;
 let foundElijahName = false;
 
-
 let foundEstherS = false;
 let foundEstherE = false;
 let foundEstherName = false;
@@ -45,7 +46,6 @@ let foundEstherName = false;
 let foundJethroS = false;
 let foundJethroE = false;
 let foundJethroName = false;
-
 
 let foundMiriamS = false;
 let foundMiriamE = false;
@@ -55,7 +55,7 @@ let foundSimonS = false;
 let foundSimonE = false;
 let foundSimonName = false;
 
-// start and end of secretList words
+// Check if both start and end of secret words have been found:
 
 let foundPleaseS = false;
 let foundPleaseE = false;
@@ -98,15 +98,14 @@ let foundThingE = false;
 let foundThingTotal = false;
 
 
+//Find the Victim list:\\
 
-//VICTIM LIST FUNCTIONS
-
-//Aaron start-end selections
+//Aaron start-end selections:
 
 let findAaronStart = document.getElementById("aaronStart").addEventListener("mousedown", startAaronSelection);
 let findAaronEnd = document.getElementById("aaronEnd").addEventListener("mouseup", endAaronSelection);
 
-//Find Aaron functions
+//Find Aaron functions:
 
 function startAaronSelection(){
     foundAaronS = true;
@@ -124,12 +123,12 @@ function endAaronSelection(){
     }    
 }
 
-//Abigail start-end selections
+//Abigail start-end selections:
 
 let findAbigailStart = document.getElementById("abigailStart").addEventListener("mousedown", startAbigailSelection);
 let findAbigailEnd = document.getElementById("abigailEnd").addEventListener("mouseup", endAbigailSelection);
 
-//Find Abigail functions
+//Find Abigail functions:
 
 function startAbigailSelection(){
     foundAbigailS = true;
@@ -147,12 +146,12 @@ function endAbigailSelection(){
     }    
 }
 
-//Elijah start-end selections
+//Elijah start-end selections:
 
 let findElijahStart = document.getElementById("elijahStart").addEventListener("mousedown", startElijahSelection);
 let findElijahEnd = document.getElementById("elijahEnd").addEventListener("mouseup", endElijahSelection);
 
-//Find Elijah functions
+//Find Elijah functions:
 
 function startElijahSelection(){
     foundElijahS = true;
@@ -170,12 +169,12 @@ function endElijahSelection(){
     }    
 }
 
-//Esther start-end selections
+//Esther start-end selections:
 
 let findEstherStart = document.getElementById("estherStart").addEventListener("mousedown", startEstherSelection);
 let findEstherEnd = document.getElementById("estherEnd").addEventListener("mouseup", endEstherSelection);
 
-//Find Esther functions
+//Find Esther functions:
 
 function startEstherSelection(){
     foundEstherS = true;
@@ -193,12 +192,12 @@ function endEstherSelection(){
     }    
 }
 
-//Jethro start-end selections
+//Jethro start-end selections:
 
 let findJethroStart = document.getElementById("jethroStart").addEventListener("mousedown", startJethroSelection);
 let findJethroEnd = document.getElementById("jethroEnd").addEventListener("mouseup", endJethroSelection);
 
-//Find Jethro functions
+//Find Jethro functions:
 
 function startJethroSelection(){
     foundJethroS = true;
@@ -216,13 +215,13 @@ function endJethroSelection(){
     }    
 }
 
-//Miriam start-end selections
+//Miriam start-end selections:
 
 let findMiriamStart = document.getElementById("miriamStart").addEventListener("mousedown", startMiriamSelection);
 let findMiriamEnd = document.getElementById("miriamEnd").addEventListener("mouseup", endMiriamSelection);
 
 
-//Find Miriam functions
+//Find Miriam functions:
 
 function startMiriamSelection(){
     foundMiriamS = true;
@@ -240,13 +239,13 @@ function endMiriamSelection(){
     }    
 }
 
-//Simon start-end selections
+//Simon start-end selections:
 
 let findSimonStart = document.getElementById("simonStart").addEventListener("mousedown", startSimonSelection);
 let findSimonEnd = document.getElementById("simonEnd").addEventListener("mouseup", endSimonSelection);
 
 
-//Find Simon functions
+//Find Simon functions:
 
 function startSimonSelection(){
     foundSimonS = true;
@@ -264,14 +263,14 @@ function endSimonSelection(){
     }    
 }
 
-// SECRET LIST FUNCTIONS
+//Find the Secret List:\\
 
-//Please! start-end selection
+//Please! start-end selection:
 
 let findPleaseStart = document.getElementById("please!Start").addEventListener("mousedown", startPleaseSelection);
 let findPleaseEnd = document.getElementById("please!End").addEventListener("mouseup", endPleaseSelection);
 
-//Find Please! functions
+//Find Please! functions:
 
 function startPleaseSelection(){
     foundPleaseS = true;
@@ -287,12 +286,12 @@ function endPleaseSelection(){
     }    
 }
 
-//Stop! start-end selection
+//Stop! start-end selection:
 
 let findStopStart = document.getElementById("stop!Start").addEventListener("mousedown", startStopSelection);
 let findStopEnd = document.getElementById("stop!End").addEventListener("mouseup", endStopSelection);
 
-//Find Stop! functions
+//Find Stop! functions:
 
 function startStopSelection(){
     foundStopS = true;
@@ -308,12 +307,12 @@ function endStopSelection(){
     }    
 }
 
-//Listen! start-end selection
+//Listen! start-end selection:
 
 let findListenStart = document.getElementById("listen!Start").addEventListener("mousedown", startListenSelection);
 let findListenEnd = document.getElementById("listen!End").addEventListener("mouseup", endListenSelection);
 
-//Find Listen! functions
+//Find Listen! functions:
 
 function startListenSelection(){
     foundListenS = true;
@@ -329,12 +328,12 @@ function endListenSelection(){
     }    
 }
 
-//Saveus! start-end selection
+//Saveus! start-end selection:
 
 let findSaveusStart = document.getElementById("saveus!Start").addEventListener("mousedown", startSaveusSelection);
 let findSaveusEnd = document.getElementById("saveus!End").addEventListener("mouseup", endSaveusSelection);
 
-//Find Saveus! functions
+//Find Saveus! functions:
 
 function startSaveusSelection(){
     foundSaveusS = true;
@@ -350,12 +349,12 @@ function endSaveusSelection(){
     }    
 }
 
-//Ritual start-end selection
+//Ritual start-end selection:
 
 let findRitualStart = document.getElementById("ritualStart").addEventListener("mousedown", startRitualSelection);
 let findRitualEnd = document.getElementById("ritualEnd").addEventListener("mouseup", endRitualSelection);
 
-//Find Ritual functions
+//Find Ritual functions:
 
 function startRitualSelection(){
     foundRitualS = true;
@@ -371,12 +370,12 @@ function endRitualSelection(){
     }    
 }
 
-//Went start-end selection
+//Went start-end selection:
 
 let findWentStart = document.getElementById("wentStart").addEventListener("mousedown", startWentSelection);
 let findWentEnd = document.getElementById("wentEnd").addEventListener("mouseup", endWentSelection);
 
-//Find Went functions
+//Find Went functions:
 
 function startWentSelection(){
     foundWentS = true;
@@ -392,12 +391,12 @@ function endWentSelection(){
     }    
 }
 
-//Awry! start-end selection
+//Awry! start-end selection:
 
 let findAwryStart = document.getElementById("awry!Start").addEventListener("mousedown", startAwrySelection);
 let findAwryEnd = document.getElementById("awry!End").addEventListener("mouseup", endAwrySelection);
 
-//Find Awry! functions
+//Find Awry! functions:
 
 function startAwrySelection(){
     foundAwryS = true;
@@ -413,12 +412,12 @@ function endAwrySelection(x,y){
     }    
 }
 
-//Kill start-end selection
+//Kill start-end selection:
 
 let findKillStart = document.getElementById("killStart").addEventListener("mousedown", startKillSelection);
 let findKillEnd = document.getElementById("killEnd").addEventListener("mouseup", endKillSelection);
 
-//Find Kill functions
+//Find Kill functions:
 
 function startKillSelection(){
     foundKillS = true;
@@ -434,12 +433,12 @@ function endKillSelection(){
     }    
 }
 
-//That start-end selection
+//That start-end selection:
 
 let findThatStart = document.getElementById("thatStart").addEventListener("mousedown", startThatSelection);
 let findThatEnd = document.getElementById("thatEnd").addEventListener("mouseup", endThatSelection);
 
-//Find That functions
+//Find That functions:
 
 function startThatSelection(){
     foundThatS = true;
@@ -455,12 +454,12 @@ function endThatSelection(){
     }    
 }
 
-//Thing! start-end selection
+//Thing! start-end selection:
 
 let findThingStart = document.getElementById("thing!Start").addEventListener("mousedown", startThingSelection);
 let findThingEnd = document.getElementById("thing!End").addEventListener("mouseup", endThingSelection);
 
-//Find Thing! functions
+//Find Thing! functions:
 
 function startThingSelection(){
     foundThingS = true;
@@ -476,7 +475,7 @@ function endThingSelection(){
     }    
 }
 
-//WINNING CONDITIONS:
+//Winning Conditions:\\
 
 function checkEvilWin() {
     if (foundAaronName === true && foundAbigailName === true &&
@@ -499,33 +498,26 @@ function checkGoodWin() {
         }
 }
 
-// //Letter highlight function
+//Letter highlight function
 
-// const letterButton = document.querySelector(".letter");
+// const buttonGrid = document.getElementById("gameGrid");
 
-// letterButton.addEventListener("mousedown", function() {
-//     letterButton.style.backgroundColor = "orange";
-//     letterButton.style.color = "white";
+// let anyButton = buttonGrid.children
+
+// let anyButtonPress = anyButton.addEventListener("click", buttonHighlight)
+
+// function buttonHighlight() {
+//     console.log(anyButton.innerText);
+// }
+   
+
+// anyButton.addEventListener("mousedown", function(){
+//     anyButton.className = "letter";
 // }
 // )
 
 // letterButton.addEventListener("mouseup", function(){
-//     letterButton.style.backgroundColor = null;
-//     letterButton.style.color = null;
-// })
-
-
-
-// //get start coordinates
-
-// document.addEventListener("mousedown", function(e){
-//     console.log(`x: ${e.x}, y:${e.y}`);
-// })
-
-// //get end coordinates
-
-// document.addEventListener("mouseup", function(e){
-//     console.log(`x: ${e.x}, y:${e.y}`);
+//     anyButton.className = null;
 // })
 
 
@@ -537,113 +529,7 @@ function checkGoodWin() {
 
 
 
-// Constants:
-
-//const victimNameArray = ["AARON", "ABIGAIL", "ELIJAH", "ESTHER", "JETHRO", "MIRIAM", "SIMON"];
-//const secretMessageArray = ["PLEASE!", "STOP!", "LISTEN!", "RITUAL", "WENT", "AWRY!", "SAVEUS!", "KILL", "THAT", "THING!"]
-//const OpenMessageOne = "HELP. ME."
-//const OpenMessageTwo = "STOP.THEM."
-//const closeBadMessageOne = "THANK. YOU. THEY. WERE."
-//const closeBadMessageTwo = "DELICIOUS."
-//const closeGoodMessageOne = "Ye gods, thank you- you saved us!"
-//const closeGoodMessageTwo = "Now, we are free"
-//const closeGoodMessageThree = "to do it again."
-//const closeGoodMessageFour = "And do it right."
-//const winningMessage = "You Win?"
-//const letterTile?
 
 
 
-//--OPENING---\\
 
-
-
-//Browser loads:
-
-//WISHLIST: grid fades in
-//WISHLIST: spookyAudio fades in and loops until ENDGAME
-//function gridPopulates
-
-// Starting messages:
-
-// after a short timer, messageBoxOne displays "help. me."
-// after a short second timer, messageBoxTwo displays "catch. them."
-// WISHLIST: after a third timer, both messages disappear
-
-//function gridPopualtes:
-
-//letters appear in grid.
-
-//function victimListPopulates:
-
-//names appear in victim list
-
-
-
-//--GAMEPLAY--\\
-
-
-
-//function selectWord:
-
-// onClick, the user starts a word selection. On [drag and release? Second click?] the selection ends.
-//tiles clicked on [cursored through?] return their innerText letter.
-//letters are made into a string called chosenWord.
-
-//function isVictimName:
-
-//Establishes whether chosenWord is present in victimName.
-// If chosenWord is in victimNameArray:
-// A red line is drawn through the chosenWord.
-// A red line is drawn through the name in victimNameBox.
-//WISHLIST: the chosenWord and the line fade out.
-
-//If chosenWord is not in victimNameArray:
-//Selection is returned.
-
-//function isSecretMessage:
-
-//Establishes whether chosenWord is present in secretMessageArray.
-// If chosenWord is in secretMessageArray:
-// the chosenWord letter tiles turn sky blue.
-//WISHLIST: the chosenWord and the line fade out.
-
-//WISHLIST: function lastChance:
-
-// When 6/7 of victimNameArray are found-
-// "PLEASE!" briefly flashes blue.
-
-//WISHLIST? function truthEmerges():
-
-//When 4/10 of secretMessageArray are found-
-//'hangman' _s appear in secretMessageBox to show what's left
-
-//--ENDGAME--\\
-
-//If 7/7 victimNames are found first:
-
-//No more buttons can be clicked
-
-// function playBadEnding();
-//Bad closing messages:
-//const closeBadMessageOne = "THANK. YOU. THEY. WERE."
-//after a short timer: const closeBadMessageTwo = "DELICIOUS."
-
-//function offerReplay()
-//after a short timer: const winningMessage = "You Win?"
-//Message displays with againBtn with innerText "Play Again"
-// againBtn.onClick resets the browser [WISHLIST: and the spookyAudio]
-
-//If 10/10 secretMessages are found first:
-
-//No more buttons can be clicked
-
-// function playGoodEnding();
-// Good closing messages:
-///const closeGoodMessageOne = "Ye gods, thank you- you saved us!"
-//after a short timer: const closeGoodMessageTwo = "Now, we are free"
-//after a short timer: const closeGoodMessageThree = "to do it again."
-//after a short timer: const closeGoodMessageFour = "And do it right."
-
-//function offerReplay()
-//as above

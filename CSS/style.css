@@ -1,11 +1,12 @@
+/* NOTES */
+
+/* CITATION: .noselect class found at https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
+
 * {
   margin:0;
   padding:0;
 }
 
-
-/* CITATION: .noselect class found at https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting */
-/* CITATION: "Crazy Killer" font- http://www.fontemporium.com/ */
 .noselect {
     -webkit-touch-callout: none;
       -webkit-user-select: none;
@@ -22,7 +23,6 @@ html, body {
 
 body{
   position: relative;
-
 }
 
 #gameScreen {
@@ -58,10 +58,9 @@ body{
   color: #7F1331;
   text-align: center;
   grid-column: 3 / 4;
-  grid-row: 2/ 3;
+  grid-row: 2 / 3;
   border-radius: 5px;
   margin: auto;
-  
 }
 
 #GameIntroMessage {
@@ -93,7 +92,7 @@ body{
   color: #7F1331;
   text-align: center;
   grid-column: 3 / 4;
-  grid-row: 2/ 3;
+  grid-row: 2 / 3;
   border-radius: 5px;
   margin: auto;
   visibility: hidden;
@@ -119,7 +118,6 @@ body{
   width: 150px;
   height: 100px;
   font-size: 30pt;
-
 }
 
 #gameGoodOutro {
@@ -133,7 +131,7 @@ body{
   color: #7F1331;
   text-align: center;
   grid-column: 3 / 4;
-  grid-row: 2/ 3;
+  grid-row: 2 / 3;
   border-radius: 5px;
   margin: auto;
   color: #0078CF;
@@ -168,12 +166,12 @@ body{
   grid-template-columns: 1fr 8fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-column: 3 / 4;
-  grid-row: 2/ 3;
+  grid-row: 2 / 3;
 }
 
 .container {
     grid-column: 3 / 4;
-    grid-row: 2/ 3;
+    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -193,18 +191,16 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  
- 
 }
 
 #gameGrid {
   min-width: 500px;
-
 }
 
-/* .letter {
+.letter {
   background-color: #3C4044;
-} */
+  color: yellow;
+}
 
 #instructions {
   grid-column: 3 / 4;
@@ -230,11 +226,6 @@ body{
   font-size: 20pt;
   font-family: "Arno Pro";
   font-style: italic;
-  
-
-
-  /* HARSH BURGUNDY WRITING */
-
 }
 
 .secretBox {
@@ -249,7 +240,5 @@ body{
   font-size: 20pt;
   font-family: "Arno Pro";
   font-style: italic;
-
-  /* angelic font */
 }
 
