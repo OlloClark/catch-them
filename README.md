@@ -1,7 +1,7 @@
 
 # "Catch Them": A spooky spin on the traditional wordsearch
 
-"HELP ME. CATCH THEM."
+**"HELP ME. CATCH THEM."**
 
 Something is asking for your help...or is it a demand? Assist as you will, but all might not be as it seems...
 
@@ -24,13 +24,14 @@ Something is asking for your help...or is it a demand? Assist as you will, but a
 
 ## Getting started...
 
-Play (if you dare) at:
+**Play (if you dare) at:**
+=======
 
 [DEPLOYED GAME LINK]
 
 Click and drag across a name to CATCH THEM!
 
-## Screenshots:
+## Screenshots
 
 https://imgur.com/gallery/QSgtz7A
 
