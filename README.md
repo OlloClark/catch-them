@@ -1,7 +1,7 @@
 
 # "Catch Them": A spooky spin on the traditional wordsearch
 
-![help Me](images/helpMe.png)
+![help Me](/images/helpMe.jpg)
 
 **"HELP ME. CATCH THEM."**
 
