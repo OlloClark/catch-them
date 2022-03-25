@@ -1,7 +1,7 @@
 
 # "Catch Them": A spooky spin on the traditional wordsearch
 
-![help Me](/images/helpMe.jpg)
+![HELP ME](/images/helpMe.jpg)
 
 **"HELP ME. CATCH THEM."**
 
@@ -27,12 +27,16 @@ Something is asking for your help...or is it a demand? Assist as you will, but a
 
 ## Getting started...
 
+![CATCH THEM](/images/findThem.jpg)
+
 **Play (if you dare) at:**
 =======
 
 https://olloclark.github.io/catch-them/
 
 Click and drag across a name to CATCH THEM!
+
+![Got one...](/images/gotOne.jpg)
 
 ## Screenshots
 
